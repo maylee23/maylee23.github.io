@@ -1,1 +1,1 @@
-This is a new Github blog withoud jekyll
+This is a new Github blog without jekyll
