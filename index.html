@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./flex_web.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/b04a6681c0.js" crossorigin="anonymous"></script>
     <script defer src="./flex_web.js"></script>
     <title>Flex web</title>
@@ -12,26 +13,29 @@
     <main>
         <header>
             <h1>
-                <i class="fab fa-firstdraft"></i>
-                <span>DCODELAB</span>
+                <img src="./image/파리_꽃선물.png" alt="프로필" class="profile">
+                <span class="name">Yelim Lee</span>
+                <span class="recommendations">Letters of <br>recommendation</span>
+
             </h1>
             <address>
-                2025 DECODELAB<br>ALL RIGHT RESERVED.
+                © 2025 Yelim Lee<br>ALL RIGHT RESERVED.<br>Last updated : 2025.04.18
             </address>
         </header>
-
         <nav>
             <ul>
+                <!-- <span class="recommendations">Letters of recommendation</span> -->
                 <li>
-                    <a href="#">
+                    <a href="mailto:lchoa92@gmail.com">
                         <i class="fas fa-envelope"></i>
+                        <span class="email"> lchoa92@gmail.com </span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <!-- <li> -->
+                    <!-- <a href="#">
                         <i class="fas fa-search"></i>
-                    </a>
-                </li>
+                    </a> -->
+                <!-- </li> -->
             </ul>
         </nav>
 
@@ -40,10 +44,18 @@
                 <div class="inner">
                     <div class="txt">
                         <h2>01</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam laborum deleniti inventore facilis ex facere quisquam eius, error ea.</p>
+                        <p class="recommendation-text">
+                            • 성명: 이호 <br>
+                            • 함께 다닌 직장: (주)바이브컴퍼니 <br>
+                            • 추천인이 최근에 다닌 회사: (주)바이브컴퍼니 <br>
+                            • 추천하는 역량: 커뮤니케이션, 문제해결 능력, 책임감 <br>
+                            • 추천사: 저는 지난 4년 동안 이예림 님과 함께 소프트웨어 개발 업무를 진행해 온 팀장입니다...
+                            <span class="read-more">Read More</span>
+                        </p>
                     </div>
                     <figure>
-                        <video src="./video/vid1.mp4" loop muted></video>
+                        <!-- <video src="./video/vid1.mp4" loop muted></video> -->
+                        <img src="./image/IMG_0690.jpeg" alt="사진1">
                     </figure>
                 </div>
             </article>
@@ -51,10 +63,19 @@
                 <div class="inner">
                     <div class="txt">
                         <h2>02</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam laborum deleniti inventore facilis ex facere quisquam eius, error ea.</p>
+                        <p class="recommendation-text">
+                            • 성명: 권수연 <br>
+                            • 함께 다닌 직장: (주)바이브컴퍼니 <br>
+                            • 추천인이 최근에 다닌 회사: (주)바이브컴퍼니 <br>
+                            • 추천하는 역량: 리더십, 커뮤니케이션 <br>
+                            • 추천사: 저는 이예림님과 동기로 입사하여 바이브컴퍼니 AI 연구소에서 4년 간 함께 근무했습니다...
+                            <span class="read-more2">Read More</span>
+                        </p>
                     </div>
                     <figure>
-                        <video src="./video/vid2.mp4" loop muted></video>
+                        <!-- <video src="./video/vid2.mp4" loop muted></video> -->
+                        <img src="./image/IMG_0066.JPG" alt="사진2">
+
                     </figure>
                 </div>
             </article>
@@ -62,10 +83,18 @@
                 <div class="inner">
                     <div class="txt">
                         <h2>03</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam laborum deleniti inventore facilis ex facere quisquam eius, error ea.</p>
+                        <p class="recommendation-text">
+                            • 성명: 김성진 <br>
+                            • 함께 다닌 직장: 바이브컴퍼니 <br>
+                            • 추천인이 최근에 다닌 회사: 바이브컴퍼니 <br>
+                            • 추천하는 역량: 문제해결 능력, 커뮤니케이션, 책임감 <br>
+                            • 추천사: 이예림님은 저와 함께 일할 당시, 탁월한 문제 해결 능력과 창의적인 접근 방식을 보여주었습니다...
+                            <span class="read-more3">Read More</span>
+                        </p>
                     </div>
                     <figure>
-                        <video src="./video/vid3.mp4" loop muted></video>
+                        <!-- <video src="./video/vid3.mp4" loop muted></video> -->
+                        <img src="./image/IMG_7575.JPG" alt="사진3">
                     </figure>
                 </div>
             </article>
@@ -73,25 +102,119 @@
                 <div class="inner">
                     <div class="txt">
                         <h2>04</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam laborum deleniti inventore facilis ex facere quisquam eius, error ea.</p>
+                        <p class="recommendation-text">
+                            • 성명: 이재복 <br>
+                            • 함께 다닌 직장: 바이브컴퍼니 <br>
+                            • 추천인이 최근에 다닌 회사: 바이브컴퍼니 <br>
+                            • 추천하는 역량: 커뮤니케이션, 문제해결 능력, 팀워크 <br>
+                            • 추천사: 저는 바이브컴퍼니에서 사업 부서(썸트렌드 부문)의 세일즈 PL로 근무하고 있으며 AI 연구소 소속의 예림님과는 사업부와 연구개발 파트로 협업 관계에 있습니다...
+                            <span class="read-more4">Read More</span>
+                        </p>
                     </div>
                     <figure>
-                        <video src="./video/vid4.mp4" loop muted></video>
+                        <!-- <video src="./video/vid4.mp4" loop muted></video> -->
+                        <img src="./image/IMG_0045.JPG" alt="사진4">
                     </figure>
                 </div>
             </article>
         </section>
 
-        <aside>
+        <!-- <aside>
             <div class="txt">
                 <h1>01</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas debitis maxime totam enim recusandae accusantium, ipsa facere consectetur provident sed.</p>
+                <p>TESTTESTTEST</p>
                 <span>CLOSE</span>
             </div>
             <figure>
                 <video src="./video/vid1.mp4" loop muted></video>
             </figure>
-        </aside>
+        </aside> -->
+
+
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h3>추천서</h3>
+                    <span class="close-popup">×</span>
+                </div>
+                <div class="popup-body">
+                    <p class="recommendation-info">
+                        • 성명: 이호 <br>
+                        • 함께 다닌 직장: (주)바이브컴퍼니 <br>
+                        • 추천인이 최근에 다닌 회사: (주)바이브컴퍼니
+                        • 추천하는 역량: 커뮤니케이션, 문제해결 능력, 책임감 <br>
+                    </p>
+                    <p class="full-recommendation">
+                        저는 지난 4년 동안 이예림 님과 함께 소프트웨어 개발 업무를 진행해 온 팀장입니다. 우리 팀의 주된 업무는 두 가지로, 하나는 데이터 분석 결과에 기반한 보고서를 자동으로 생성하는 시스템을 개발하는 것이고, 다른 하나는 통계청의 통계 데이터를 수집하고 가공하여 사용자가 원하는 통계를 편리하게 검색할 수 있는 서비스를 만드는 것입니다. 이예림 님은 파이썬을 사용하여 데이터의 가공과 분석을 처리하는 백엔드 개발 업무와 분석된 데이터나 검색된 통계를 amCharts를 이용하여 시각화하는 업무를 병행하였습니다. 몇 개의 문장으로 한 사람에 대해 온전히 이야기하기는 어렵지만, 새로운 동료를 구하려는 분들에게 조금이나마 도움이 되고자 이예림 님에 대해 세 가지를 말씀드리고자 합니다. 첫째, 이예림 님은 소프트 웨어 엔지니어로서 뛰어난 의사소통 능력과 협업 능력을 갖춘 인재입니다. 그는 업무 진행 과정에서 능동적이고 시의적절하게 소통하여, 업무 진행 상황이 투명하고 문제가 발생하더라도 더 큰 위험 요소가 되기 전에 조기에 대응할 수 있었습니다. 또한 회의 자료, 매뉴얼, 교육 자료 등 다양한 문서를 작성하는 능력이 뛰어나 그 문서를 읽는 사람이 쉽게 이해할 수 있도록 명확하게 정보를 전달합니다. 특히, 팀원들과의 의사소통에서 상대방의 입장을 적극적으로 이해하고 존중하는 태도를 갖추고 있어, 이러한 그의 소통 능력 덕분에 프로젝트가 순조롭게 진행되고 팀의 사기와 생산성도 높은 수준을 유지할 수 있었습니다. 둘째, 이예림 님은 바람직한 업무 자세를 갖추고 있습니다. 그는 단순히 주어진 업무를 수동적으로 수행하는 것이 아니라, 주인의식을 가지고 책임감 있게 임하는 태도를 지니고 있습니다. 그는 본인에게 주어진 역할을 넘어서 전체 프로젝트의 큰 그림을 이해하려는 노력을 게을리하지 않습니다. 그 덕분에 연관된 업무들 사이의 관계를 고려하여 최선의 선택을 이끌어내고 세부 업무의 완성도를 높게 이뤄냅니다. 이러한 태도 덕분에 그는 팀 내에서 큰 신뢰를 얻고 있으며, 프로젝트의 성공적인 진행에 중요한 기여를 하고 있습니다. 셋째, 문제 해결 능력에 있어서도 이예림 님은 돋보이는 성과를 보여주고 있습니다. 그는 프로젝트 진행 중 발생할 수 있는 잠재적인 문제점들을 미리 예측하고, 이를 사전에 해결하기 위한 전략을 구상합니다. 이러한 예측력과 준비성 덕분에 프로젝트는 큰 어려움 없이 순조롭게 진행되었으며, 예기치 못한 상황이 발생하더라도 신속하고 효과적으로 대응할 수 있었습니다. 또한, 이예림 님은 기술적인 이슈를 개선하고자 하는 강한 의지를 가지고 있으며, 문제의 근본적인 원인을 분석하고 이를 개선하기 위해 끊임없이 탐구하는 집념을 보입니다. 그는 데이터를 깊이 있게 하고, 이를 실질적인 성과로 연결시키는 데 매우 뛰어난 능력을 지니고 있습니다. 종합적으로 이예림 님은 소프트웨어 엔지니어로서의 역량뿐만 아니라 팀워크와 책임감, 그리고 문제 해결 능력까지 갖춘 뛰어난 인재입니다. 그는 앞으로도 지속적으로 성장하며 본인이 소속된 팀과 조직에 큰 가치를 더할 것이라 확신합니다. 그의 헌신적이고 적극적인 자세는 팀과 조직의 발전에 없어서는 안 될 중요한 자산이며, 그와 함께 일할 수 있었던 것은 큰 행운이었습니다. 이예림 님의 성실함과 뛰어난 능력을 바탕으로 앞으로도 더 큰 성장을 이루기를 진심으로 응원합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-overlay2">
+            <div class="popup-content2">
+                <div class="popup-header2">
+                    <h3>추천서</h3>
+                    <span class="close-popup2">×</span>
+                </div>
+                <div class="popup-body2">
+                    <p class="recommendation-info2">
+                        • 성명: 권수연 <br>
+                        • 함께 다닌 직장: (주)바이브컴퍼니 <br>
+                        • 추천인이 최근에 다닌 회사: (주)바이브컴퍼니
+                        • 추천하는 역량: 리더십, 커뮤니케이션 <br>
+                    </p>
+                    <p class="full-recommendation2">
+                        저는 이예림님과 동기로 입사하여 바이브컴퍼니 AI 연구소에서 4년 간 함께 근무했습니다. 연구소에서 같이 업무를 하는 동안 예림님께서 리더십과 커뮤니케이션 스킬이 뛰어나다는 것을 느낄 수 있었습니다. 첫 번째로, 예림님은 리더십이 돋보이는 분입니다. 팀에 주어진 프로젝트가 있었는데 모두 책임지려하지 않고 실무자들끼리 커뮤니케이션이 원활하게 되지 않아 진행이 더디게 되고 있을때, 먼저 책임지고 프로젝트 매니징을 맡겨줄 것을 팀장님께 적극적으로 어필하여 프로젝트를 리드하셨습니다. 이 모습을 보고 일의 책임소재가 명확하지 않아 아무도 나서서 책임지려하지 않을때 답답함을 느끼고 먼저 나서서 일이 되게하는 능력이 뛰어나다는 것을 느꼈습니다. 두 번째로, 커뮤니케이션 스킬이 좋은 분입니다. 예림님은 팀 내에서도 업무와 관련된 일이라면 서로간에 커뮤니케이션 미스가 없도록 애매모호하게 말하지 않고 뾰족하고 정확하게 말하는 편입니다. 그래서 일을 할때 서로 커뮤니케이션이 잘못되어 오해하는 부분이 적어 명확하게 일을 진행하는데 수월합니다. 또한 피드백을 이성적으로 날카롭게 잘 주시는 편입니다. 이러한 부분들을 보았을때, 예림님과 일하면 솔직한 피드백과 커뮤니케이션을 기대할 수 있었습니다. 위와 같이 4년동안 이예림님과 일하면서 느낀 점들로 보았을때, 적극적인 리더십과 명확한 커뮤니케이션으로 답답함 없이 안되던 일이 되게 하는 분이라고 생각합니다. 어느 조직에서든 이러한 장점이 조직과 팀을 원활히 앞으로 나아가게 하는데 기여할 수 있을 것이므로 이예림님을 추천합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-overlay3">
+            <div class="popup-content3">
+                <div class="popup-header3">
+                    <h3>추천서</h3>
+                    <span class="close-popup3">×</span>
+                </div>
+                <div class="popup-body3">
+                    <p class="recommendation-info3">
+                        • 성명: 김성진 <br>
+                        • 함께 다닌 직장: 바이브컴퍼니 <br>
+                        • 추천인이 최근에 다닌 회사: 삼양식품 <br>
+                        • 추천하는 역량: 문제해결 능력, 커뮤니케이션, 책임감 <br>
+                    </p>
+                    <p class="full-recommendation3">
+                        이예림님은 저와 함께 일할 당시, 탁월한 문제 해결 능력과 창의적인 접근 방식을 보여주었습니다. 특히 고객사에서 새로운 요구 사항이 있을 때마다, 독창적인 방법을 통해 문제를 해결하며, 기존에 시도되지 않았던 분석을 도입하여 고객사의 큰 만족을 이끌어냈습니다. 이러한 성과 덕분에 고객사와의 계약 연장이 성사되었으며, 결과적으로 고객 만족도 역시 크게 향상되었습니다. 이예림님은 뛰어난 책임감과 시간 관리 능력을 바탕으로 맡은 바를 철저하게 이행하며, 동료들과의 협업 과정에서도 신뢰할 수 있는 인재임을 증명했습니다. 또한, 원활한 커뮤니케이션 능력을 발휘하여 다양한 프로젝트를 성공적으로 완수했으며, 팀의 생산성과 목표 달성에 크게 기여했습니다. 기회가 주어진다면, 저는 이예림님과 다시 한 번 함께 일할 의향이 있을 정도로 훌륭한 동료로 기억하고 있습니다. 그의 역량과 헌신은 앞으로도 많은 조직에서 큰 가치를 더할 것 이라고 확신합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-overlay4">
+            <div class="popup-content4">
+                <div class="popup-header4">
+                    <h3>추천서</h3>
+                    <span class="close-popup4">×</span>
+                </div>
+                <div class="popup-body4">
+                    <p class="recommendation-info4">
+                        • 성명: 이재복 <br>
+                        • 함께 다닌 직장: 바이브컴퍼니 <br>
+                        • 추천인이 최근에 다닌 회사: 바이브컴퍼니 <br>
+                        • 추천하는 역량: 커뮤니케이션, 문제해결 능력, 팀워크 <br>
+                    </p>
+                    <p class="full-recommendation4">
+                        저는 바이브컴퍼니에서 사업 부서(썸트렌드 부문)의 세일즈 PL로 근무하고 있으며 AI 연구소 소속의 예림님과는 사업부와 연구개발 파트로 협업 관계에 있습니다. 바이브컴퍼니(구 다음소프트)는 다음커뮤니케이션의 연구소가 스핀오프한 회사인 만큼, 개발 연구원의 업무 능력은 업계 상위급이라고 판단하고 있으며 예림님 또한 개발 연구원으로서의 기본 업무 능력 또한 출중 합니다. 다만, 제가 별도로 추천사를 작성하는 이유는 개발 연구원의 능력은 아래와 같이 3가지로 추천하고 싶습니다.
+                        1. 사업부와 커뮤니케이션 능력 - 제 개인 커리어(개인사업 및 스타트업,외국계,대기업 근무) 경험으로 사업부와 개발 연구원과의 가장 큰 문제는 내부 커뮤니케이션에서 어려움이 있다고 생각하는데요, 예림님은 사업 부서와 원활한 커뮤니케이션 능력이 대면 및 이메일 등의 문서 상에서도 뛰어남을 보이고 있습니다. 또한 특유의 밝은 분위기는 같이 일하는 사람으로써 에너지를 더욱 받게 해주는 능력을 보유하고 있다고 생각합니다.
+                        2. 적극적인 업무&프로젝트 F/U - 통상 프로덕트에서 이슈(오류)가 있고 이를 해결하기 위해 지원 파트나 개발 연구원 측으로 업무 협조 요청을 하는 것이 일방적인 프로세스라고 생각했고 예림님을 만나기 전 까지는 해당 과정이 당연하다고 생각했습니다. 제 상식과 다르게 예림님은 프로덕트의 이슈(오류)에 대해서 먼저 확인하고, 어떤 상황에서 문제가 있었는지에 대해 먼저 문의하는 적극적인 업무 해결 능력을 보유하고 있어 프로젝트의 주인 의식을 함양한 업무 동료라고 생각되며 제가 개인 사업을 다시 한다면 모시고 싶은분이기도 합니다.
+                        3. 긍정 에너지를 주는 분위기 메이커 - 사견으로 장기 근무의 원동력은 연봉,하고 싶은 업무,팀원 간 단결이라고 생각합니다. 이 중에 팀원 간 단결만이 정성적이며 바텀업으로 가능한 것이라고 생각하는데요, 예림님은 그 능력을 보유한 동료 입니다. 예림님은 전무급 리더와 팀원 간의 중간 리더로써 어렵고 무거운 분위기가 형성 될 수 밖에 없는데 항상 특유의 긍정적이고 에너지 넘치는 모습으로 밝은 회의실과 업무 분위기를 잘 만들어주는 모습을 종종 볼 수 있었고 사업부와의 미팅에서도 이와 같은 모습들은 같이 일하기 좋은 동료로 인식이 생기는 것 같습니다. 그럼 해당 추천사가 귀사의 출중한 인재 채용에 도움이 되길 기원하며 글을 마칩니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
 
     </main>
 </body>
