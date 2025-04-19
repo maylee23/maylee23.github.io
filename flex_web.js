@@ -8,16 +8,16 @@ console.log(aside);
 // console.log(close);
 
 // items를 반복문
-for (let el of items) {
+// for (let el of items) {
     // 현재 반복이 돌고 있는 article 요소에 mouseenter event 발생시
-    el.addEventListener("mouseenter", e=>{
-        // 자식인 video 요소 재생
-        e.currentTarget.querySelector("video").play();
-    });
+    // el.addEventListener("mouseenter", e=>{
+    //     // 자식인 video 요소 재생
+    //     e.currentTarget.querySelector("video").play();
+    // });
 
-    el.addEventListener("mouseleave", e=>{
-        e.currentTarget.querySelector("video").pause();
-    });
+    // el.addEventListener("mouseleave", e=>{
+    //     e.currentTarget.querySelector("video").pause();
+    // });
 
     // el.addEventListener("click", e=>{
     //     // 제목과 본문 내용, video 요소 값을 변수에 저장
@@ -41,7 +41,7 @@ for (let el of items) {
     //     aside.classList.remove("on")
     //     aside.querySelector("video").pause();
     // })
-};
+// };
 
 // Popup functionality
 document.addEventListener('DOMContentLoaded', function() {
@@ -204,6 +204,75 @@ document.addEventListener('DOMContentLoaded', function() {
             readMoreBtn4: !!readMoreBtn4,
             popupOverlay4: !!popupOverlay4,
             closePopup4: !!closePopup4
+        });
+    }
+});
+
+
+// Article click functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const articles = document.querySelectorAll('section article');
+
+    articles.forEach((article, index) => {
+        const popupOverlay = document.querySelector(`.popup-overlay${index + 1}`);
+        const closePopup = document.querySelector(`.close-popup${index + 1}`);
+
+        if (article && popupOverlay && closePopup) {
+            // Mouseenter event for video play
+            article.addEventListener('mouseenter', function() {
+                const video = article.querySelector('video');
+                if (video) {
+                    video.play();
+                }
+            });
+
+            // Mouseleave event for video pause
+            article.addEventListener('mouseleave', function() {
+                const video = article.querySelector('video');
+                if (video) {
+                    video.pause();
+                }
+            });
+
+            // Click event for popup
+            article.addEventListener('click', function(e) {
+                e.preventDefault();
+                popupOverlay.style.display = 'flex';
+            });
+
+            // Close popup
+            closePopup.addEventListener('click', function() {
+                popupOverlay.style.display = 'none';
+            });
+
+            // Close popup when clicking outside
+            popupOverlay.addEventListener('click', function(e) {
+                if (e.target === popupOverlay) {
+                    popupOverlay.style.display = 'none';
+                }
+            });
+        }
+    });
+
+    // First article specific popup
+    const firstArticle = document.querySelector('section article:first-child');
+    const firstPopupOverlay = document.querySelector('.popup-overlay');
+    const firstClosePopup = document.querySelector('.close-popup');
+
+    if (firstArticle && firstPopupOverlay && firstClosePopup) {
+        firstArticle.addEventListener('click', function(e) {
+            e.preventDefault();
+            firstPopupOverlay.style.display = 'flex';
+        });
+
+        firstClosePopup.addEventListener('click', function() {
+            firstPopupOverlay.style.display = 'none';
+        });
+
+        firstPopupOverlay.addEventListener('click', function(e) {
+            if (e.target === firstPopupOverlay) {
+                firstPopupOverlay.style.display = 'none';
+            }
         });
     }
 });
